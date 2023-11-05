@@ -1,4 +1,4 @@
-import express, { NextFunction, Request, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { ROLE } from '../users/enum';
 import { productSchema } from './products.validator';
 import Products from './products.model';

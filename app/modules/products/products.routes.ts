@@ -1,4 +1,3 @@
-// customer.routes.ts
 import express from 'express';
 import { verifyToken } from '../../middlewares/verifyAuth';
 import { productController } from './products.controller';

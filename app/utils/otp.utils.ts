@@ -15,8 +15,8 @@ class OTPManager {
 			});
 			return { data: message, message: `OTP sent to ${phoneNumber}.` };
 		} catch (err: any) {
-			console.error('Error sending OTP:', err);
-			throw new Error('E: sendOTP() Failed to send otp ' + err.toString());
+			console.error('error - ', err);
+			throw new Error(err.message);
 		}
 	};
 
