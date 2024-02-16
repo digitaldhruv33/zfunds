@@ -4,6 +4,7 @@ import Users from '../modules/users/user.model';
 export const generateAccessToken = async (user: Users) => {
 	const accessTokenSecret: string = process.env.JWT_ACCESS_TOKEN_SECRET!;
 	console.log('accessTokenSecret')
+	console.log('accessTokenSecret')
 	const { id, mobile_number, role } = user;
 	return new Promise((res, rej) => {
 		jwt.sign(
